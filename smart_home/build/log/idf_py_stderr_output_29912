@@ -1,0 +1,75 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40056f5c: [0;33mmemcpy[0m[0m in [0;32mROM[0m
+[0m--- 0x40056f72: [0;33mmemcpy[0m[0m in [0;32mROM[0m
+[0m--- 0x4037adba: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m64[0m
+[0m--- 0x40375ee0: [0;33mipc_task[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/esp_system/esp_ipc.c[0m[0m:[1;31m53[0m
+[0m--- 0x4037adb7: [0;33mxt_utils_wait_for_intr[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/xtensa/include/xt_utils.h[0m[0m:[1;31m82[0m
+[0m--- (inlined by) [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m55[0m
+[0m--- 0x42003456: [0;33mesp_vApplicationIdleHook[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m58[0m
+[0m--- 0x4037e699: [0;33mprvIdleTask[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c[0m[0m:[1;31m4341[0m
+[0m--- 0x4037d459: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40375b08: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x4037adba: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m64[0m
+[0m--- 0x4037adb7: [0;33mxt_utils_wait_for_intr[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/xtensa/include/xt_utils.h[0m[0m:[1;31m82[0m
+[0m--- (inlined by) [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m55[0m
+[0m--- 0x42003456: [0;33mesp_vApplicationIdleHook[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m58[0m
+[0m--- 0x4037e699: [0;33mprvIdleTask[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c[0m[0m:[1;31m4341[0m
+[0m--- 0x4037d459: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40056f5c: [0;33mmemcpy[0m[0m in [0;32mROM[0m
+[0m--- 0x40056f72: [0;33mmemcpy[0m[0m in [0;32mROM[0m
+[0m--- 0x40375b08: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x4037acbe: [0;33mxt_utils_compare_and_set[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/xtensa/include/xt_utils.h[0m[0m:[1;31m216[0m
+[0m--- (inlined by) [0;33mesp_cpu_compare_and_set[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m232[0m
+[0m--- 0x40056f5c: [0;33mmemcpy[0m[0m in [0;32mROM[0m
+[0m--- 0x40056f72: [0;33mmemcpy[0m[0m in [0;32mROM[0m
+[0m--- 0x4037acbb: [0;33mxt_utils_compare_and_set[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/xtensa/include/xt_utils.h[0m[0m:[1;31m216[0m
+[0m--- (inlined by) [0;33mesp_cpu_compare_and_set[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m232[0m
+[0m--- 0x4037d64a: [0;33mspinlock_acquire[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m123[0m
+[0m--- (inlined by) [0;33mxPortEnterCriticalTimeout[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m479[0m
+[0m--- 0x4037cdcf: [0;33mvPortEnterCritical[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h[0m[0m:[1;31m567[0m
+[0m--- (inlined by) [0;33mxQueueGenericSend[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c[0m[0m:[1;31m950[0m
+[0m--- 0x4205b2c6: [0;33msys_sem_signal[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/lwip/port/freertos/sys_arch.c[0m[0m:[1;31m134[0m
+[0m--- 0x4205d132: [0;33mlwip_netconn_do_writemore[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/lwip/lwip/src/api/api_msg.c[0m[0m:[1;31m1876[0m
+[0m--- 0x4205dcb8: [0;33mlwip_netconn_do_write[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/lwip/lwip/src/api/api_msg.c[0m[0m:[1;31m1921[0m
+[0m--- 0x4204b975: [0;33mtcpip_thread_handle_msg[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/lwip/lwip/src/api/tcpip.c[0m[0m:[1;31m162[0m
+[0m--- 0x4204ba20: [0;33mtcpip_thread[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/lwip/lwip/src/api/tcpip.c[0m[0m:[1;31m148[0m
+[0m--- 0x4037d459: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40375b08: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x4037acbe: [0;33mxt_utils_compare_and_set[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/xtensa/include/xt_utils.h[0m[0m:[1;31m216[0m
+[0m--- (inlined by) [0;33mesp_cpu_compare_and_set[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m232[0m
+[0m--- 0x40056f5c: [0;33mmemcpy[0m[0m in [0;32mROM[0m
+[0m--- 0x40056f72: [0;33mmemcpy[0m[0m in [0;32mROM[0m
+[0m--- 0x4037acbb: [0;33mxt_utils_compare_and_set[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/xtensa/include/xt_utils.h[0m[0m:[1;31m216[0m
+[0m--- (inlined by) [0;33mesp_cpu_compare_and_set[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m232[0m
+[0m--- 0x4037d64a: [0;33mspinlock_acquire[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m123[0m
+[0m--- (inlined by) [0;33mxPortEnterCriticalTimeout[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m479[0m
+[0m--- 0x4037cdcf: [0;33mvPortEnterCritical[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h[0m[0m:[1;31m567[0m
+[0m--- (inlined by) [0;33mxQueueGenericSend[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c[0m[0m:[1;31m950[0m
+[0m--- 0x4205b2c6: [0;33msys_sem_signal[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/lwip/port/freertos/sys_arch.c[0m[0m:[1;31m134[0m
+[0m--- 0x4205d132: [0;33mlwip_netconn_do_writemore[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/lwip/lwip/src/api/api_msg.c[0m[0m:[1;31m1876[0m
+[0m--- 0x4205dcb8: [0;33mlwip_netconn_do_write[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/lwip/lwip/src/api/api_msg.c[0m[0m:[1;31m1921[0m
+[0m--- 0x4204b975: [0;33mtcpip_thread_handle_msg[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/lwip/lwip/src/api/tcpip.c[0m[0m:[1;31m162[0m
+[0m--- 0x4204ba20: [0;33mtcpip_thread[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/lwip/lwip/src/api/tcpip.c[0m[0m:[1;31m148[0m
+[0m--- 0x4037d459: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40375b08: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x40377448: [0;33m_xt_user_exit[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m833[0m
+[0m--- 0x40056f5c: [0;33mmemcpy[0m[0m in [0;32mROM[0m
+[0m--- 0x40056f72: [0;33mmemcpy[0m[0m in [0;32mROM[0m
+[0m--- 0x4037d7da: [0;33mvPortClearInterruptMaskFromISR[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h[0m[0m:[1;31m560[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m514[0m
+[0m--- 0x42015d30: [0;33mhttpd_resp_send[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/esp_http_server/src/httpd_txrx.c[0m[0m:[1;31m289[0m
+[0m--- 0x4200b1a2: [0;33mroot_handler[0m[0m at [0;32mC:/esp/smart_home/main/smart_home.c[0m[0m:[1;31m82[0m
+[0m--- 0x420162cf: [0;33mhttpd_uri[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/esp_http_server/src/httpd_uri.c[0m[0m:[1;31m335[0m
+[0m--- 0x42016b2d: [0;33mhttpd_parse_req[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/esp_http_server/src/httpd_parse.c[0m[0m:[1;31m663[0m
+[0m--- 0x42016bcc: [0;33mhttpd_req_new[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/esp_http_server/src/httpd_parse.c[0m[0m:[1;31m791[0m
+[0m--- 0x420159d8: [0;33mhttpd_sess_process[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/esp_http_server/src/httpd_sess.c[0m[0m:[1;31m427[0m
+[0m--- 0x42014c0a: [0;33mhttpd_process_session[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/esp_http_server/src/httpd_main.c[0m[0m:[1;31m267[0m
+[0m--- 0x4208115f: [0;33mhttpd_sess_enum[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/esp_http_server/src/httpd_sess.c[0m[0m:[1;31m50[0m
+[0m--- 0x420153d4: [0;33mhttpd_server[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/esp_http_server/src/httpd_main.c[0m[0m:[1;31m317[0m
+[0m--- 0x42015443: [0;33mhttpd_thread[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/esp_http_server/src/httpd_main.c[0m[0m:[1;31m339[0m
+[0m--- 0x4037d459: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40375b08: [0;33mesp_restart_noos[0m[0m at [0;32mC:/esp/v5.3.5/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m
