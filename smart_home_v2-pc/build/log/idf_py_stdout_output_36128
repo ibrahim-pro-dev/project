@@ -1,0 +1,164 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1828
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2eb8
+entry 0x403c8918
+[0;32mI (27) boot: ESP-IDF v5.3.5 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun 29 2026 23:12:06[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot: efuse block revision: v1.3[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=1fa40h (129600) map[0m
+[0;32mI (127) esp_image: segment 1: paddr=0002fa68 vaddr=3fc9a300 size=005b0h (  1456) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=98730h (624432) map[0m
+[0;32mI (247) esp_image: segment 3: paddr=000c8758 vaddr=3fc9a8b0 size=048f0h ( 18672) load[0m
+[0;32mI (251) esp_image: segment 4: paddr=000cd050 vaddr=40374000 size=162b0h ( 90800) load[0m
+[0;32mI (282) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (282) boot: Disabling RNG early entropy source...[0m
+[0;32mI (294) cpu_start: Multicore app[0m
+[0;32mI (303) cpu_start: Pro cpu start user code[0m
+[0;32mI (303) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (304) app_init: Application information:[0m
+[0;32mI (306) app_init: Project name:     smart_home[0m
+[0;32mI (312) app_init: App version:      1[0m
+[0;32mI (316) app_init: Compile time:     Jun 29 2026 23:11:57[0m
+[0;32mI (322) app_init: ELF file SHA256:  fcf7ed337...[0m
+[0;32mI (327) app_init: ESP-IDF:          v5.3.5[0m
+[0;32mI (332) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (337) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (342) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (347) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (354) heap_init: At 3FCA4E60 len 000448B0 (274 KiB): RAM[0m
+[0;32mI (360) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (366) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (372) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (379) spi_flash: detected chip: boya[0m
+[0;32mI (383) spi_flash: flash io: dio[0m
+[0;32mI (387) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (394) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (401) main_task: Started on CPU0[0m
+[0;32mI (431) main_task: Calling app_main()[0m
+[0;32mI (441) gpio: GPIO[16]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (441) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (451) pp: pp rom version: e7ae62f[0m
+[0;32mI (461) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (471) wifi:wifi driver task: 3fcaf1e0, prio:23, stack:6656, core=0[0m
+[0;32mI (471) wifi:wifi firmware version: 18db208[0m
+[0;32mI (471) wifi:wifi certification version: v7.0[0m
+[0;32mI (481) wifi:config NVS flash: enabled[0m
+[0;32mI (481) wifi:config nano formating: disabled[0m
+[0;32mI (481) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (491) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (491) wifi:Init management short buffer num: 32[0m
+[0;32mI (501) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (501) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (501) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (511) wifi:Init static rx buffer num: 10[0m
+[0;32mI (511) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (521) wifi_init: rx ba win: 6[0m
+[0;32mI (521) wifi_init: accept mbox: 6[0m
+[0;32mI (521) wifi_init: tcpip mbox: 32[0m
+[0;32mI (531) wifi_init: udp mbox: 6[0m
+[0;32mI (531) wifi_init: tcp mbox: 6[0m
+[0;32mI (541) wifi_init: tcp tx win: 5760[0m
+[0;32mI (541) wifi_init: tcp rx win: 5760[0m
+[0;32mI (541) wifi_init: tcp mss: 1440[0m
+[0;32mI (551) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (551) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (561) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (601) wifi:mode : softAP (1c:db:d4:42:15:61)[0m
+[0;32mI (611) wifi:Total power save buffer number: 16[0m
+[0;32mI (611) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (611) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (611) SMART_HOME: WiFi Started[0m
+[0;32mI (611) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (621) esp_https_server: Starting server[0m
+[0;32mI (631) esp_https_server: Server listening on port 443[0m
+[0;32mI (631) SMART_HOME: HTTPS Server Started[0m
+[0;32mI (641) SMART_HOME: Web Server Started[0m
+[0;32mI (641) main_task: Returned from app_main()[0m
+[0;32mI (13041) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (13041) wifi:station: 54:31:f7:be:92:dc join, AID=1, bgn, 40U[0m
+[0;32mI (14201) wifi:<ba-add>idx:2 (ifx:1, 54:31:f7:be:92:dc), tid:0, ssn:18, winSize:64[0m
+[0;32mI (14381) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (19811) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (19821) wifi:station: 6e:9d:3e:60:6a:0d join, AID=2, bgn, 40U[0m
+[0;32mI (19981) wifi:<ba-add>idx:3 (ifx:1, 6e:9d:3e:60:6a:0d), tid:0, ssn:0, winSize:64[0m
+[0;32mI (20101) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.4[0m
+[0;32mI (24391) esp_https_server: performing session handshake[0m
+[0;31mE (25461) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x7780[0m
+[0;31mE (25461) esp_https_server: esp_tls_create_server_session failed, 0x7780[0m
+[0;31mE (25461) httpd: httpd_accept_conn: session creation failed[0m
+[0;33mW (25471) httpd: httpd_server: error accepting new connection[0m
+[0;32mI (25471) esp_https_server: performing session handshake[0m
+[0;31mE (26541) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x7780[0m
+[0;31mE (26541) esp_https_server: esp_tls_create_server_session failed, 0x7780[0m
+[0;31mE (26551) httpd: httpd_accept_conn: session creation failed[0m
+[0;33mW (26551) httpd: httpd_server: error accepting new connection[0m
+[0;32mI (31091) esp_https_server: performing session handshake[0m
+[0;31mE (32151) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x7780[0m
+[0;31mE (32151) esp_https_server: esp_tls_create_server_session failed, 0x7780[0m
+[0;31mE (32161) httpd: httpd_accept_conn: session creation failed[0m
+[0;33mW (32161) httpd: httpd_server: error accepting new connection[0m
+[0;32mI (32171) esp_https_server: performing session handshake[0m
+[0;31mE (33241) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x7780[0m
+[0;31mE (33241) esp_https_server: esp_tls_create_server_session failed, 0x7780[0m
+[0;31mE (33251) httpd: httpd_accept_conn: session creation failed[0m
+[0;33mW (33251) httpd: httpd_server: error accepting new connection[0m
+[0;32mI (33261) esp_https_server: performing session handshake[0m
+[0;33mW (34681) httpd_parse: parse_block: request URI/header too long[0m
+[0;33mW (34681) httpd_txrx: httpd_resp_send_err: 431 Request Header Fields Too Large - Header fields are too long[0m
+[0;32mI (34791) esp_https_server: performing session handshake[0m
+[0;31mE (35871) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x7780[0m
+[0;31mE (35871) esp_https_server: esp_tls_create_server_session failed, 0x7780[0m
+[0;31mE (35881) httpd: httpd_accept_conn: session creation failed[0m
+[0;33mW (35881) httpd: httpd_server: error accepting new connection[0m
+[0;32mI (35891) esp_https_server: performing session handshake[0m
+[0;33mW (37231) httpd_parse: parse_block: request URI/header too long[0m
+[0;33mW (37231) httpd_txrx: httpd_resp_send_err: 431 Request Header Fields Too Large - Header fields are too long[0m
+[0;32mI (61361) esp_https_server: performing session handshake[0m
+[0;31mE (62431) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x7780[0m
+[0;31mE (62431) esp_https_server: esp_tls_create_server_session failed, 0x7780[0m
+[0;31mE (62431) httpd: httpd_accept_conn: session creation failed[0m
+[0;33mW (62441) httpd: httpd_server: error accepting new connection[0m
+[0;32mI (62451) esp_https_server: performing session handshake[0m
+[0;31mE (63521) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x7780[0m
+[0;31mE (63521) esp_https_server: esp_tls_create_server_session failed, 0x7780[0m
+[0;31mE (63521) httpd: httpd_accept_conn: session creation failed[0m
+[0;33mW (63531) httpd: httpd_server: error accepting new connection[0m
+[0;32mI (63951) esp_https_server: performing session handshake[0m
+[0;31mE (65021) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x7780[0m
+[0;31mE (65021) esp_https_server: esp_tls_create_server_session failed, 0x7780[0m
+[0;31mE (65031) httpd: httpd_accept_conn: session creation failed[0m
+[0;33mW (65031) httpd: httpd_server: error accepting new connection[0m
+[0;32mI (65041) esp_https_server: performing session handshake[0m
+[0;31mE (66111) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x7780[0m
+[0;31mE (66111) esp_https_server: esp_tls_create_server_session failed, 0x7780[0m
+[0;31mE (66121) httpd: httpd_accept_conn: session creation failed[0m
+[0;33mW (66121) httpd: httpd_server: error accepting new connection[0m
+[0;32mI (66131) esp_https_server: performing session handshake[0m
+[0;33mW (67661) httpd_parse: parse_block: request URI/header too long[0m
+[0;33mW (67661) httpd_txrx: httpd_resp_send_err: 431 Request Header Fields Too Large - Header fields are too long[0m
+[0;32mI (67751) esp_https_server: performing session handshake[0m
+[0;31mE (68811) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x7780[0m
+[0;31mE (68811) esp_https_server: esp_tls_create_server_session failed, 0x7780[0m
+[0;31mE (68821) httpd: httpd_accept_conn: session creation failed[0m
+[0;33mW (68821) httpd: httpd_server: error accepting new connection[0m
+[0;32mI (68831) esp_https_server: performing session handshake[0m
+[0;33mW (70181) httpd_parse: parse_block: request URI/header too long[0m
+[0;33mW (70181) httpd_txrx: httpd_resp_send_err: 431 Request Header Fields Too Large - Header fields are too long[0m

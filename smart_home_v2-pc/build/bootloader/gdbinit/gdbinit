@@ -1,0 +1,2 @@
+source C:/esp/smart_home/build/bootloader/gdbinit/symbols
+source C:/esp/smart_home/build/bootloader/gdbinit/connect
